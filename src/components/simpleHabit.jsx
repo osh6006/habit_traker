@@ -16,6 +16,8 @@ const SimpleHabit = props => {
   });
 
   // 카운트가 변경될 때마다 호출!
+  // 비어져있으면 처음에만 호출!
+  //
   useEffect(() => {
     console.log(`mounted & updated ${count}`);
   }, [count]);
